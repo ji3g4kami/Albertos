@@ -21,9 +21,9 @@ class MenuGroupingTests: XCTestCase {
   }
 
   func testMenuWithManyCategoriesReturnsOneSectionPerCategory() {
-    let menu = [
-      MenuItem(category: "pastas", name: "name"),
-      MenuItem(category: "pastas", name: "other name")
+    let menu: [MenuItem] = [
+      .fixture(category: "pastas"),
+      .fixture(category: "pastas")
     ]
     let sections = groupMenuByCategory(menu)
     XCTAssertEqual(sections.count, 1)
@@ -31,8 +31,8 @@ class MenuGroupingTests: XCTestCase {
   
   func testMenuWithOneCategoryReturnsOneSection() throws {
     let menu = [
-      MenuItem(category: "pastas", name: "name"),
-      MenuItem(category: "pastas", name: "other name")
+      MenuItem.fixture(category: "pastas", name: "name"),
+      MenuItem.fixture(category: "pastas", name: "other name")
     ]
     
     let sections = groupMenuByCategory(menu)
@@ -47,11 +47,11 @@ class MenuGroupingTests: XCTestCase {
   /// Given a menu with meny categories, returns as many sections,
   /// in reverse alphabetical order
   func test_groupMenyByCategories_MenuWithManyCategories_ReturnsAsManySectionsInReverseAlphabeticalOrder() {
-    let menu = [
-      MenuItem(category: "pastas", name: "a pasta"),
-      MenuItem(category: "drinks", name: "a drink"),
-      MenuItem(category: "pastas", name: "another pasta"),
-      MenuItem(category: "desserts", name: "a dessert")
+    let menu: [MenuItem] = [
+      .fixture(category: "pastas"),
+      .fixture(category: "drinks"),
+      .fixture(category: "pastas"),
+      .fixture(category: "desserts")
     ]
     
     let sections = groupMenuByCategory(menu)

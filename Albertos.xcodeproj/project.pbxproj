@@ -17,6 +17,8 @@
 		1487CD2626EDD79200E0C506 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487CD2526EDD79200E0C506 /* MenuList.swift */; };
 		1487CD2826EDD93D00E0C506 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487CD2726EDD93D00E0C506 /* Group.swift */; };
 		1487CD2926EDDAB100E0C506 /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487CD2326EDD04D00E0C506 /* Collection+Safe.swift */; };
+		1487CD2C26EDE88500E0C506 /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487CD2A26EDE87F00E0C506 /* MenuItem+Fixture.swift */; };
+		1487CD2E26EDEC1800E0C506 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487CD2D26EDEC1800E0C506 /* MenuSection+Fixture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1487CD2326EDD04D00E0C506 /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
 		1487CD2526EDD79200E0C506 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		1487CD2726EDD93D00E0C506 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		1487CD2A26EDE87F00E0C506 /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
+		1487CD2D26EDEC1800E0C506 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				1487CD2326EDD04D00E0C506 /* Collection+Safe.swift */,
+				1487CD2A26EDE87F00E0C506 /* MenuItem+Fixture.swift */,
+				1487CD2D26EDEC1800E0C506 /* MenuSection+Fixture.swift */,
 				1487CD1C26EDC40500E0C506 /* MenuGroupingTests.swift */,
 				1487CD0126EDC14500E0C506 /* Info.plist */,
 			);
@@ -237,7 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1487CD2E26EDEC1800E0C506 /* MenuSection+Fixture.swift in Sources */,
 				1487CD2926EDDAB100E0C506 /* Collection+Safe.swift in Sources */,
+				1487CD2C26EDE88500E0C506 /* MenuItem+Fixture.swift in Sources */,
 				1487CD1D26EDC40500E0C506 /* MenuGroupingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
