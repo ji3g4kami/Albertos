@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1476C3BB26EE8A20005CEE71 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476C3BA26EE8A20005CEE71 /* MenuRow.swift */; };
+		1476C3BD26EE8AE3005CEE71 /* MenuRowViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476C3BC26EE8AE3005CEE71 /* MenuRowViewModelTests.swift */; };
+		1476C3BF26EE94EA005CEE71 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476C3BE26EE94EA005CEE71 /* MenuListViewModelTests.swift */; };
 		1487CCEE26EDC14400E0C506 /* AlbertosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487CCED26EDC14400E0C506 /* AlbertosApp.swift */; };
 		1487CCF226EDC14400E0C506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1487CCF126EDC14400E0C506 /* Assets.xcassets */; };
 		1487CCF526EDC14400E0C506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1487CCF426EDC14400E0C506 /* Preview Assets.xcassets */; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1476C3BA26EE8A20005CEE71 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		1476C3BC26EE8AE3005CEE71 /* MenuRowViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowViewModelTests.swift; sourceTree = "<group>"; };
+		1476C3BE26EE94EA005CEE71 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
 		1487CCEA26EDC14300E0C506 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487CCED26EDC14400E0C506 /* AlbertosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosApp.swift; sourceTree = "<group>"; };
 		1487CCF126EDC14400E0C506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 				1487CCED26EDC14400E0C506 /* AlbertosApp.swift */,
 				1487CD2726EDD93D00E0C506 /* Group.swift */,
 				1487CD2526EDD79200E0C506 /* MenuList.swift */,
+				1476C3BA26EE8A20005CEE71 /* MenuRow.swift */,
 				1487CCF126EDC14400E0C506 /* Assets.xcassets */,
 				1487CCF626EDC14400E0C506 /* Info.plist */,
 				1487CCF326EDC14400E0C506 /* Preview Content */,
@@ -114,7 +121,9 @@
 			children = (
 				1487CD2326EDD04D00E0C506 /* Collection+Safe.swift */,
 				1487CD2A26EDE87F00E0C506 /* MenuItem+Fixture.swift */,
+				1476C3BE26EE94EA005CEE71 /* MenuListViewModelTests.swift */,
 				1487CD2D26EDEC1800E0C506 /* MenuSection+Fixture.swift */,
+				1476C3BC26EE8AE3005CEE71 /* MenuRowViewModelTests.swift */,
 				1487CD1C26EDC40500E0C506 /* MenuGroupingTests.swift */,
 				1487CD0126EDC14500E0C506 /* Info.plist */,
 			);
@@ -236,6 +245,7 @@
 				1487CD2226EDC61900E0C506 /* MenuSection.swift in Sources */,
 				1487CCEE26EDC14400E0C506 /* AlbertosApp.swift in Sources */,
 				1487CD2626EDD79200E0C506 /* MenuList.swift in Sources */,
+				1476C3BB26EE8A20005CEE71 /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +256,8 @@
 				1487CD2E26EDEC1800E0C506 /* MenuSection+Fixture.swift in Sources */,
 				1487CD2926EDDAB100E0C506 /* Collection+Safe.swift in Sources */,
 				1487CD2C26EDE88500E0C506 /* MenuItem+Fixture.swift in Sources */,
+				1476C3BD26EE8AE3005CEE71 /* MenuRowViewModelTests.swift in Sources */,
+				1476C3BF26EE94EA005CEE71 /* MenuListViewModelTests.swift in Sources */,
 				1487CD1D26EDC40500E0C506 /* MenuGroupingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
