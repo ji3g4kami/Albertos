@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import Combine
 
 struct MenuList: View {
-  let viewModel: ViewModel
+  @ObservedObject var viewModel: ViewModel
   var body: some View {
     List {
       ForEach(viewModel.sections) { section in
@@ -23,17 +24,20 @@ struct MenuList: View {
 }
 
 extension MenuList {
-  struct ViewModel {
-    let sections: [MenuSection]
-    init(menu: [MenuItem],
+  class ViewModel: ObservableObject {
+    @Published private(set) var sections: [MenuSection]
+    private var cancellables = Set<AnyCancellable>()
+    init(menuFetching: MenuFetching,
          menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory) {
-      self.sections = menuGrouping(menu)
+      self.sections = []
+      menuFetching.fetchMenu()
+        .sink { _ in
+          
+        } receiveValue: { [weak self] menuItems in
+          self?.sections = menuGrouping(menuItems)
+        }
+        .store(in: &cancellables)
+
     }
   }
-}
-
-struct MenuList_Previews: PreviewProvider {
-    static var previews: some View {
-      MenuList(viewModel: .init(menu: menu, menuGrouping: groupMenuByCategory))
-    }
 }

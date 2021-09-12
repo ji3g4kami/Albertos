@@ -10,6 +10,8 @@
 		1476C3BB26EE8A20005CEE71 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476C3BA26EE8A20005CEE71 /* MenuRow.swift */; };
 		1476C3BD26EE8AE3005CEE71 /* MenuRowViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476C3BC26EE8AE3005CEE71 /* MenuRowViewModelTests.swift */; };
 		1476C3BF26EE94EA005CEE71 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476C3BE26EE94EA005CEE71 /* MenuListViewModelTests.swift */; };
+		1476C3C226EEA060005CEE71 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476C3C126EEA060005CEE71 /* MenuFetching.swift */; };
+		1476C3C426EEA4D6005CEE71 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476C3C326EEA4D6005CEE71 /* MenuFetchingPlaceholder.swift */; };
 		1487CCEE26EDC14400E0C506 /* AlbertosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487CCED26EDC14400E0C506 /* AlbertosApp.swift */; };
 		1487CCF226EDC14400E0C506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1487CCF126EDC14400E0C506 /* Assets.xcassets */; };
 		1487CCF526EDC14400E0C506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1487CCF426EDC14400E0C506 /* Preview Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		1476C3BA26EE8A20005CEE71 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		1476C3BC26EE8AE3005CEE71 /* MenuRowViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowViewModelTests.swift; sourceTree = "<group>"; };
 		1476C3BE26EE94EA005CEE71 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
+		1476C3C126EEA060005CEE71 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
+		1476C3C326EEA4D6005CEE71 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
 		1487CCEA26EDC14300E0C506 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1487CCED26EDC14400E0C506 /* AlbertosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosApp.swift; sourceTree = "<group>"; };
 		1487CCF126EDC14400E0C506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1476C3C026EEA03C005CEE71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1487CD2526EDD79200E0C506 /* MenuList.swift */,
+				1476C3BA26EE8A20005CEE71 /* MenuRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1487CCE126EDC14300E0C506 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +111,10 @@
 			children = (
 				1487CD1E26EDC5E900E0C506 /* Model */,
 				1487CCED26EDC14400E0C506 /* AlbertosApp.swift */,
+				1476C3C126EEA060005CEE71 /* MenuFetching.swift */,
+				1476C3C326EEA4D6005CEE71 /* MenuFetchingPlaceholder.swift */,
 				1487CD2726EDD93D00E0C506 /* Group.swift */,
-				1487CD2526EDD79200E0C506 /* MenuList.swift */,
-				1476C3BA26EE8A20005CEE71 /* MenuRow.swift */,
+				1476C3C026EEA03C005CEE71 /* View */,
 				1487CCF126EDC14400E0C506 /* Assets.xcassets */,
 				1487CCF626EDC14400E0C506 /* Info.plist */,
 				1487CCF326EDC14400E0C506 /* Preview Content */,
@@ -240,6 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1476C3C426EEA4D6005CEE71 /* MenuFetchingPlaceholder.swift in Sources */,
+				1476C3C226EEA060005CEE71 /* MenuFetching.swift in Sources */,
 				1487CD2826EDD93D00E0C506 /* Group.swift in Sources */,
 				1487CD2026EDC60300E0C506 /* MenuItem.swift in Sources */,
 				1487CD2226EDC61900E0C506 /* MenuSection.swift in Sources */,
